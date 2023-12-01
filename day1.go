@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"os"
 	"regexp"
 	"strconv"
 	"strings"
@@ -10,11 +9,7 @@ import (
 
 func Day1Part1() {
 	total := 0
-	// Read the file
-	data, _ := os.ReadFile("./inputs/day1.txt")
-	// Split text
-	input := string(data)
-	lines := strings.Split(input, "\n")
+	lines := ReadFile("day1")
 
 	for x := range lines {
 		var numbers []int
@@ -38,11 +33,7 @@ func Day1Part1() {
 func Day1Part2() {
 
 	total := 0
-	// Read the file
-	data, _ := os.ReadFile("./inputs/day1.txt")
-	// // Split text
-	input := string(data)
-	lines := strings.Split(input, "\n")
+	lines := ReadFile("day1")
 
 	numberPattern := "one|two|three|four|five|six|seven|eight|nine|0|1|2|3|4|5|6|7|8|9"
 	numberPatternReversed := ReverseString(numberPattern)
