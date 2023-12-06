@@ -26,7 +26,7 @@ func Day1Part1() {
 		total = total + thisLineTotalNum
 	}
 
-	fmt.Print("Part 1 :")
+	fmt.Print("Part 1: ")
 	fmt.Println(total)
 }
 
@@ -54,7 +54,7 @@ func Day1Part2() {
 		total = total + thisLineTotalNum
 	}
 
-	fmt.Print("Part 2 :")
+	fmt.Print("Part 2: ")
 	fmt.Println(total)
 }
 
